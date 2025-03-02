@@ -1,237 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhanush's Resume</title>
+    <title>Kovvuru Dhanush - Portfolio</title>
     <style>
         body {
-            font-family: 'Your Serif Font', serif;
-            background-color: #f7f7f7;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-
-        .image-section {
-            background-color: #4caf50;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section {
             padding: 30px;
-            margin: -20px -20px 20px -20px;
+            background: #fff;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
         }
-
-        .profile-image {
-            border-radius: 50%;
-            max-width: 150px;
-            border: 4px solid #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-
-        .section {
-            border: 2px solid #4caf50;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            background-color: #ffffff;
-            text-align: left;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
         h2 {
-            color: #333;
-            border-bottom: 2px solid #4caf50;
+            color: #007BFF;
+            border-bottom: 3px solid #007BFF;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            font-size: 1.8em;
-            position: relative;
+            font-size: 24px;
         }
-
-        h2::after {
-            content: '';
-            display: block;
-            height: 2px;
-            width: 0;
-            background: #4caf50;
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-
-        h2:hover::after {
-            width: 100%;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.8em;
-            color: #555;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        a.button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #4CAF50;
+        .links a {
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            font-size: 1.2em;
-            margin-top: 10px;
-            margin-right: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            margin-right: 20px;
+            transition: color 0.3s ease-in-out;
         }
-
-        a.button:hover {
-            background-color: #45a049;
-            transform: scale(1.05);
+        .links a:hover {
+            color: #f4f4f4;
         }
-
-        .contact-details {
-            font-size: 1.2em;
-            color: #333;
-            margin-top: 10px;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+        }
+        .project {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 6px solid #007BFF;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .project h3 {
+            color: #007BFF;
+            margin-bottom: 8px;
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <h1>Kovvuru Dhanush</h1>
+        <p>DevOps & Cloud Enthusiast</p>
+        <p class="links">
+            <a href="mailto:kovurudhanush@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/kovvuru-dhanush-787990225/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/KovvuruDhanush" target="_blank">GitHub</a>
+        </p>
+    </header>
+    
     <div class="container">
-        <div class="image-section">
-            <!-- <img class="profile-image" src="image.jpeg" alt="Your Name"> -->
-        </div>
-        <h1>Hello, I'm Dhanush</h1>
-
-        <div class="section">
-            <h2>Introduction</h2>
-            <p>I'm a highly motivated individual passionate about cloud edge computing. Actively pursuing global
-                certifications, I'm focused on enhancing my expertise in this field. I'm also eager to delve into web
-                development. Currently, I'm preparing for the AWS Associate Solution Architect certification by
-                completing two globally recognized certifications: AWS Cloud Practitioner and AI 900.</p>
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-            <p>I'm a third-year B.Tech student at KL University, Vijayawada, enrolled in the 2021-2025 batch. I hold a
-                CGPA of 9.3 and am set to graduate in 2025. My secondary education at Ravindra Bharathi School earned me
-                a CGPA of 9.0. Additionally, I achieved an 83 percentile on the JEE examination and secured 78% in my
-                intermediate exams.</p>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <p>I possess strong communication and leadership skills. I'm an avid learner with a penchant for
-                photography. Good in C, Java, Python, and JavaScript, I approach problem-solving with an
-                analytical mindset.</p>
-        </div>
-
-        <div class="section">
-            <h2>Volunteering and Extra Curricular</h2>
-            <p>I'm actively involved in various activities that enhance my communication and leadership skills.
-                Additionally, my passion for photography allows me to view situations from a unique perspective.</p>
-        </div>
-
-        <div class="section">
-            <h2>Programming Languages</h2>
+        <section>
+            <h2>Career Objective</h2>
+            <p>DevOps and Cloud Computing enthusiast with expertise in AWS, Docker, and automation. Passionate about scalable infrastructure and workflow optimization.</p>
+        </section>
+        
+        <section>
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Dynamic Website Deployment on AWS</h3>
+                <p>Deployed a website using AWS EC2, S3, and Lambda. Integrated CloudFront for scalability and high availability.</p>
+            </div>
+            <div class="project">
+                <h3>Kubernetes-based E-commerce Platform</h3>
+                <p>Developed and deployed a microservices-based e-commerce platform on AWS EKS with Helm automation.</p>
+            </div>
+            <div class="project">
+                <h3>Automated CI/CD Pipeline with Jenkins</h3>
+                <p>Designed and implemented an automated CI/CD pipeline with Jenkins, Docker, and GitHub Actions.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
             <ul>
-                <li>Java</li>
-                <li>C</li>
-                <li>Python</li>
-                <li>JavaScript</li>
+                <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, Lambda, VPC)</li>
+                <li><strong>DevOps Tools:</strong> Docker, Jenkins, Git, GitHub</li>
+                <li><strong>Operating Systems:</strong> Linux (Unix)</li>
+                <li><strong>Programming Languages:</strong> Shell Scripting, Java</li>
             </ul>
-        </div>
-
-        <div class="section">
-            <h2>Full Stacks</h2>
-            <ul>
-                <li>MERN</li>
-                <li>Django</li>
-                <li>Spring Boot</li>
-            </ul>
-        </div>
-
-        <div class="section">
+        </section>
+        
+        <section>
             <h2>Certifications</h2>
-            <p>I am currently pursuing five globally recognized certificates: AWS Cloud Practitioner, AI 900, Red
-                Hat, and AWS associate solution architect. If possible, I'd want to get them by the end of the
-                semester. and I've completed three so far..</p>
-        </div>
-
-        <div class="section">
-            <h2>LinkedIn Posts</h2>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_aws-cloudcomputing-awsexam-activity-7111750769426538496-7C0L?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 1 Post</a>
-            <!-- Add other LinkedIn post links as needed -->
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_aws-cloudcomputing-awsexam-activity-7112427686723026944-WdWw?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 2 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_aws-cloudcomputing-awsexam-activity-7113156148022706176-t3SN?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 3 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_aws-cloudcomputing-awsexam-activity-7113911007130910721-_kTM?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 4 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7114605351232049152-By24?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 5 Post</a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7115701224221417472/" class="button">Day 6
-                Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7117174083233980416-p9Jn?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 7 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7117934008923013120-fyI8?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 8 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7117934008923013120-fyI8?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 9 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7119367568821293056-hn3z?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 10 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_modern-applications-on-aws-november-6-activity-7120861241815797764-sGtW?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 11 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7122205738298478592-RLjR?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 12 Post</a>
-            <a href="https://www.linkedin.com/posts/kovvuru-dhanush-787990225_learningbydoing-aws-cloudcomputing-activity-7123752835241963522-MueI?utm_source=share&utm_medium=member_desktop"
-                class="button">Day 13 Post</a>
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <div class="section">
-            <h2>Contact Details</h2>
-            <p class="contact-details">Email: kovurudhanush@gmail.com</p>
-        </div>
+            <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>EX183 Red Hat Enterprise Application Developer Certificate</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech in Computer Science (2021 - 2025)</strong> - K L University, Vijayawada (CGPA: 9.48/10)</li>
+                <li><strong>Intermediate (MPC) (2019 - 2021)</strong> - Nucleus College, Nandyal (CGPA: 8.0/10)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Eager to Learn, Adaptable, Quick Problem-Solver</li>
+                <li>Strong Communication and Collaboration Skills</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Coding Platforms</h2>
+            <ul>
+                <li><a href="https://www.codechef.com/users/kl_2100030286" target="_blank">CodeChef</a></li>
+                <li><a href="https://www.hackerrank.com/profile/h2100030286" target="_blank">HackerRank</a></li>
+                <li><a href="https://leetcode.com/u/kovvurudhanush/" target="_blank">LeetCode</a></li>
+            </ul>
+        </section>
     </div>
 </body>
-
 </html>
